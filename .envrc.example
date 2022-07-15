@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export PORT=3030
+export PUBLIC_ENCRYPTION_KEY=
+export APP_URL=

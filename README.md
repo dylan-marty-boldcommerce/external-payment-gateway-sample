@@ -24,25 +24,32 @@ This repository is free to fork and use; to connect your payment gateway with Bo
    npm install
    ```
 
-3. Copy `.env.example` to `.env`.
+3. Copy `.envrc.example` to `.envrc`.
 
    ```sh
-   cp .env.example .env
+   cp .envrc.example .envrc
    ```
 
-4. Set the following environment variables in `.env`.
+4. Set the following environment variables in `.envrc`.
 
    ```.env
    PORT={Your preferred port number}
+   APP_URL={Your app's root URL}
    ```
 
-5. Start your plugin server.
+5. Export environment variables
+
+   ```sh
+   direnv allow
+   ```
+
+6. Start your plugin server.
 
    ```sh
    npm run start
    ```
 
-6. Expose your server to the internet. In a development environment you can use services like [ngrok](https://ngrok.com/) or [Cloudflare Tunnel](https://blog.cloudflare.com/tunnel-for-everyone/) to achieve this.
+7. Expose your server to the internet. In a development environment you can use services like [ngrok](https://ngrok.com/) or [Cloudflare Tunnel](https://blog.cloudflare.com/tunnel-for-everyone/) to achieve this.
 
 ## Customization
 
